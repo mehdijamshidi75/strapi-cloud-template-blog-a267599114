@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "looks",
+  "info": {
+    "singularName": "look",
+    "pluralName": "looks",
+    "displayName": "Look"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mainImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hotspots": {
+      "type": "component",
+      "component": "shared.hotspot",
+      "repeatable": true
+    }
+  }
+}

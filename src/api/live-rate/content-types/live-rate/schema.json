@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "live_rates",
+  "info": {
+    "singularName": "live-rate",
+    "pluralName": "live-rates",
+    "displayName": "Live Rate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "gold_price_per_gram": {
+      "type": "decimal",
+      "required": true
+    },
+    "silver_price_per_gram": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

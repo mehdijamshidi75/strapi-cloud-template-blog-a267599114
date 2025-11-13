@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_shared_hotspots",
+  "info": {
+    "displayName": "Hotspot"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "productImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "productUrl": {
+      "type": "string"
+    },
+    "positionTop": {
+      "type": "string"
+    },
+    "positionLeft": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

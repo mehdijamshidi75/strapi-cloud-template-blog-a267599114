@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_shared_product_details",
+  "info": {
+    "displayName": "ProductDetail"
+  },
+  "options": {},
+  "attributes": {
+    "tiltle": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "positionTop": {
+      "type": "string"
+    },
+    "positionLeft": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
