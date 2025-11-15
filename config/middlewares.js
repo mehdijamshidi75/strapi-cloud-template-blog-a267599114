@@ -1,17 +1,7 @@
-// file: config/middlewares.js
 module.exports = [
   'strapi::errors',
   'strapi::security',
-  {
-    name: 'strapi::cors',
-    config: {
-      enabled: true,
-      origin: ['*'], // <-- این به همه دامنه‌ها اجازه می‌دهد (برای تست)
-      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
-      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
-      keepHeaderOnError: true,
-    },
-  },
+  'strapi::cors',
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
@@ -20,3 +10,19 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
 ];
+
+module.exports.settings = {
+  cors: {
+    enabled: true,
+    origin: [
+      'https://*.stackblitz.com',
+      'https://*.stackblitz.io', 
+      'https://*.webcontainer.io',
+      'http://localhost:3000',
+      'http://localhost:1337'
+    ],
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
+    headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
+    keepHeadersOnError: true,
+  },
+};
