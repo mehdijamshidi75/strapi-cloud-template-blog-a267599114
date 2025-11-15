@@ -7,14 +7,8 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       enabled: true,
-      // ما از تنظیماتی که خودتان نوشته بودید + یک ستاره (*) برای اطمینان استفاده می‌کنیم
-      origin: [
-        'https://stackblitz.com',
-        'https://*.stackblitz.io', // برای همه زیردامنه‌های stackblitz
-        'http://localhost:3000',
-        'http://localhost:1337',
-        '*' // به عنوان پشتیبان، به همه‌جا اجازه می‌دهد
-      ],
+      // به همه‌جا اجازه می‌دهد (برای تست)
+      origin: ['*'], 
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       keepHeaderOnError: true,
