@@ -3,15 +3,10 @@ module.exports = [
   'strapi::errors',
   'strapi::security',
   {
-    // ما رشته 'strapi::cors' را با این آبجکت جایگزین می‌کنیم
     name: 'strapi::cors',
     config: {
       enabled: true,
-      // به همه‌جا اجازه می‌دهد (برای تست)
-      origin: ['*'], 
-      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
-      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
-      keepHeaderOnError: true,
+      origin: ['*'], // به همه دامنه‌ها اجازه بده
     },
   },
   'strapi::poweredBy',
